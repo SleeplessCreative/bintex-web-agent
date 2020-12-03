@@ -1,1 +1,29 @@
 // Variable overrides
+//colors
+$primary-base: #5D54A4 !default;
+$primary-dark: #5D54A4 !default;
+$primary: #5D54A4 !default;
+$primary-50: #B99AFF !default;
+$primary-25: #D8C7FF !default;
+
+$secondary-base: #2A3D66 !default;
+$secondary-dark: #2A3D66 !default;
+$secondary: #2A3D66 !default;
+$secondary-50: #F4F7FF !default;
+$secondary-25: #FFFFFF !default;
+
+
+//sidebar
+$sidebar-dark-bg: #ffffff !default;
+$sidebar-dark-brand-bg: rgba(0, 0, 0, 0) !default;
+
+$sidebar-dark-nav-title-color: rgba(#5D54A4, .6) !default;
+$sidebar-dark-nav-link-color: rgba(#5D54A4, .8) !default;
+$sidebar-dark-nav-link-icon-color: rgba(#5D54A4, .5) !default;
+
+$sidebar-dark-nav-link-active-color: #2A3D66 !default;
+$sidebar-dark-nav-link-active-bg: rgba(#2A3D66, .05) !default;
+$sidebar-dark-nav-link-active-icon-color: #2A3D66 !default;
+
+$sidebar-dark-minimizer-bg: rgba(0, 0, 0, 0) !default;
+$sidebar-dark-minimizer-hover-bg: rgba($primary, .8) !default;
