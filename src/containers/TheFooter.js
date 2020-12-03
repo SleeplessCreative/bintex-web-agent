@@ -4,16 +4,18 @@ import { CFooter, CLink } from '@coreui/react'
 const TheFooter = () => {
   return (
     <CFooter fixed={false}>
-      <div>
-        <CLink href="https://coreui.io/react/docs/" target="_blank">
-          Library documentation
+      <div className="mfs-auto">
+        <span className="mr-1">Powered By</span>
+        <CLink
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Bintex.id
         </CLink>
       </div>
-      <div className="ml-auto">
-        <span className="mr-1">Right text</span>
-      </div>
     </CFooter>
-  )
+  );
 }
 
 export default React.memo(TheFooter)
