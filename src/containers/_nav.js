@@ -11,6 +11,26 @@ export default [
   },
   {
     _tag: "CSidebarNavTitle",
+    _children: ["Action"],
+  },
+  {
+    _tag: "CSidebarNavItem",
+    name: "Add Receipt",
+    to: "/receipt",
+    icon: "add",
+  },
+  {
+    _tag: "CSidebarNavItem",
+    name: "Payment",
+    to: "/payment",
+    icon: "creditCard",
+  },
+  {
+    _tag: "CSidebarNavDivider",
+    className: "m-1",
+  },
+  {
+    _tag: "CSidebarNavTitle",
     _children: ["Packages"],
   },
   {
@@ -28,11 +48,5 @@ export default [
   {
     _tag: "CSidebarNavDivider",
     className: "m-2",
-  },
-  {
-    _tag: "CSidebarNavItem",
-    name: "Payment",
-    to: "/payment",
-    icon: "creditCard",
   },
 ];

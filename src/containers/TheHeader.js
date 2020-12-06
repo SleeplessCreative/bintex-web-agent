@@ -1,14 +1,11 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  CHeader,
-  CHeaderBrand,
-  CHeaderNav,
-  CHeaderNavItem,
-  CHeaderNavLink,
-  CToggler,
-} from "@coreui/react";
+import { CHeader, CHeaderBrand, CHeaderNav, CToggler, CBreadcrumbRouter } from "@coreui/react";
+import { TheAddbar } from "./index";
 import CIcon from "@coreui/icons-react";
+
+import routes from "../routes";
 
 const TheHeader = () => {
   const dispatch = useDispatch();
@@ -30,6 +27,9 @@ const TheHeader = () => {
     dispatch({ type: "set", sidebarShow: val });
   };
 
+  const { pathname } = useLocation();
+  console.log(pathname);
+
   return (
     <CHeader withSubheader>
       <CToggler
@@ -47,9 +47,10 @@ const TheHeader = () => {
       </CHeaderBrand>
 
       <CHeaderNav className="d-md-down-none mr-auto">
-        <CHeaderNavItem className="px-3">
-          <CHeaderNavLink to="/dashboard">Dashboard</CHeaderNavLink>
-        </CHeaderNavItem>
+        <CBreadcrumbRouter
+          className="border-0 c-subheader-nav m-0 px-0 px-md-3"
+          routes={routes}
+        />
       </CHeaderNav>
 
       <CHeaderNav className="px-3">
@@ -78,6 +79,7 @@ const TheHeader = () => {
           <CIcon className="mr-2" size="lg" name="cil-applications-settings" />
         </CToggler>
       </CHeaderNav>
+      {pathname === "/packages/packagesout" ? <TheAddbar /> : null}
     </CHeader>
   );
 };

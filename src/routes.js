@@ -8,19 +8,19 @@ const PackagesOut = React.lazy(() =>
   import("./views/packages/packagesout/PackagesOut")
 );
 const Payment = React.lazy(() => import("./views/payment/Payment"));
+const Receipt = React.lazy(() => import("./views/receipt/Receipt"));
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
-  { path: "/", exact: true, name: "Home" },
-  { path: "/dashboard", name: "Dashboard", component: Dashboard },
-  { path: "/packages", name: "Packages", component: PackagesIn, exact: true },
-  { path: "/packages/packagesin", name: "PackagesIn", component: PackagesIn },
+  { path: "/dashboard", name: "DASHBOARD", component: Dashboard },
+  { path: "/packages/packagesin", name: "PACKAGES IN", component: PackagesIn },
   {
     path: "/packages/packagesout",
-    name: "PackagesOut",
+    name: "PACKAGES OUT",
     component: PackagesOut,
   },
-  { path: "/payment", name: "Payment", component: Payment },
+  { path: "/payment", name: "PAYMENT", component: Payment },
+  { path: "/receipt", name: "RECEIPT", component: Receipt },
 ];
 
 export default routes;
