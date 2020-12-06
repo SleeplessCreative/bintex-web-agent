@@ -36,13 +36,13 @@ export default [
   {
     _tag: "CSidebarNavItem",
     name: "In",
-    to: "/packages/packagesin",
+    to: "/packagesin",
     icon: "inbox",
   },
   {
     _tag: "CSidebarNavItem",
     name: "Out",
-    to: "/packages/packagesout",
+    to: "/packagesout",
     icon: "outbox",
   },
   {

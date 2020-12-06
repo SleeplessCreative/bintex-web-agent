@@ -8,7 +8,7 @@ import {
   CDataTable,
 } from "@coreui/react";
 
-import usersDataOut from "../../../userdata/UsersDataOut";
+import usersDataOut from "../../userdata/UsersDataOut";
 
 const PackagesIn = () => {
   const [details, setDetails] = useState([]);
