@@ -7,7 +7,7 @@ import {
   CCollapse,
   CDataTable,
 } from "@coreui/react";
-import usersDataIn from "../../../data/UsersDataIn";
+import usersDataIn from "../../../userdata/UsersDataIn";
 
 const PackagesIn = () => {
   const [details, setDetails] = useState([]);
