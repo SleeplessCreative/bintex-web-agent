@@ -4,6 +4,7 @@ import { dashboard } from "./dashboard";
 import { inbox } from "./inbox";
 import { outbox } from "./outbox";
 import { creditCard } from "./creditCard";
+import { add } from "./add";
 
 import { cilApplicationsSettings, cilSun, cilMoon } from "@coreui/icons";
 
@@ -16,6 +17,7 @@ export const icons = Object.assign(
     inbox,
     outbox,
     creditCard,
+    add,
   },
   {
     cilApplicationsSettings,
