@@ -7,7 +7,7 @@ import {
   CCollapse,
   CDataTable,
 } from "@coreui/react";
-import usersDataIn from "../../userdata/UsersDataIn";
+import usersDataIn from "../../data/UsersDataIn";
 
 const PackagesIn = () => {
   const [details, setDetails] = useState([]);
@@ -70,7 +70,7 @@ const PackagesIn = () => {
           hover
           sorter
           pagination
-          // loading
+          //loading
           // onRowClick={(item,index,col,e) => console.log(item,index,col,e)}
           // onPageChange={(val) => console.log('new page:', val)}
           // onPagesChange={(val) => console.log('new pages:', val)}

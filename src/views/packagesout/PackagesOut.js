@@ -8,7 +8,7 @@ import {
   CDataTable,
 } from "@coreui/react";
 
-import usersDataOut from "../../userdata/UsersDataOut";
+import usersDataOut from "../../data/UsersDataOut";
 
 const PackagesIn = () => {
   const [details, setDetails] = useState([]);
@@ -57,9 +57,11 @@ const PackagesIn = () => {
     }
   };
 
+
   return (
     <CCard className="overflow-hidden">
       <CCardBody>
+        {console.log(usersDataOut)}
         <CDataTable
           items={usersDataOut}
           fields={fields}
