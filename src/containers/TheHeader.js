@@ -28,7 +28,7 @@ const TheHeader = () => {
   };
 
   const { pathname } = useLocation();
-  console.log(pathname);
+  //console.log(pathname);
 
   return (
     <CHeader withSubheader>
