@@ -13,8 +13,6 @@ import { Provider } from "react-redux";
 import store from "./store";
 
 let token = Cookies.getJSON("acc");
-console.log(token);
-
 const url = "https://staging.bintex.id/api/is-auth";
 const options = {
   method: "GET",
@@ -31,17 +29,14 @@ async function loggedIn() {
   return data;
 }
 
-loggedIn()
-  .then((data) => console.log(data))
-  .catch(
-    (err) => console.log(err)
-    //(window.location.href = "https://bintex.id/login")
-  );
-
 React.icons = icons;
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    {loggedIn() === 200 ? (
+      <App />
+    ) : (
+      (window.location.href = "https://bintex.id/login")
+    )}
   </Provider>,
   document.getElementById("root")
 );
