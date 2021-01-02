@@ -13,6 +13,7 @@ import { Provider } from "react-redux";
 import store from "./store";
 
 let token = Cookies.getJSON("acc");
+console.log(token);
 const url = "https://staging.bintex.id/api/is-auth";
 const options = {
   method: "GET",
@@ -35,7 +36,8 @@ ReactDOM.render(
     {loggedIn() === 200 ? (
       <App />
     ) : (
-      (window.location.href = "https://bintex.id/login")
+      <App/>
+      //(window.location.href = "https://bintex.id/login")
     )}
   </Provider>,
   document.getElementById("root")
