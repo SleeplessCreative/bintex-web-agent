@@ -15,8 +15,8 @@ export default [
   },
   {
     _tag: "CSidebarNavItem",
-    name: "Add Receipt",
-    to: "/receipt",
+    name: "Add Invoice",
+    to: "/invoice",
     icon: "add",
   },
   {
@@ -24,6 +24,12 @@ export default [
     name: "Payment",
     to: "/payment",
     icon: "creditCard",
+  },
+  {
+    _tag: "CSidebarNavItem",
+    name: "Tariff",
+    to: "/ongkir",
+    icon: "send",
   },
   {
     _tag: "CSidebarNavDivider",
