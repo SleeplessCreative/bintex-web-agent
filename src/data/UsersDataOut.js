@@ -10,11 +10,11 @@ const usersDataOut = [
   },
   {
     resi: Math.floor(Math.random() * 1000000000),
-    sender: "Eraldsss",
-    receiver: "Algi",
-    phone: "0822",
-    from: "medan",
-    to: "perawang",
+    sender: "Budi",
+    receiver: "Tanti",
+    phone: "84944949",
+    from: "Siak",
+    to: "Pekanaru",
     status: "Pending",
   },
 ];
